@@ -1,0 +1,21 @@
+.banner {
+  text-align: center;
+  background-color: #612727;
+  padding: 1em;
+  transition: opacity 0.3s, max-height 0.3s;
+
+  p {
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+
+  &.visible {
+    opacity: 1;
+    max-height: 100px;
+  }
+
+  &.hidden {
+    opacity: 0;
+    max-height: 0;
+  }
+}

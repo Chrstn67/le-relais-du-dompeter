@@ -6,7 +6,7 @@ function Banner() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 150) {
         setBannerVisible(false);
       } else {
         setBannerVisible(true);

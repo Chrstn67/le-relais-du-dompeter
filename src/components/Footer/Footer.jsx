@@ -11,13 +11,13 @@ const Footer = () => {
         </div>
         <div className="footer-links">
           <ul>
-            <li>
-              <Link href="/conditions-generales-d-utilisation">
+            {/* <li>
+              <Link to="/conditions-generales-d-utilisation">
                 Conditions générales d&#39;utilisation
               </Link>
-            </li>
+            </li> */}
             <li>
-              <Link href="/mentions-legales">Mentions légales</Link>
+              <Link to="/mentions-legales">Mentions légales</Link>
             </li>
           </ul>
         </div>

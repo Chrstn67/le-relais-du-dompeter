@@ -53,9 +53,10 @@
     margin-bottom: 1rem;
 
     img {
-      max-width: 100%;
-      height: auto;
-      display: none;
+      width: 13em;
+      height: 13em;
+      object-fit: cover;
+      border-radius: 0.5em;
     }
   }
 

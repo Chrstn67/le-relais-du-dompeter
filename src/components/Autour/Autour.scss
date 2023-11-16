@@ -81,10 +81,12 @@
       color: #333;
       line-height: 1.4;
     }
+
     img {
-      max-width: 70%;
-      height: auto;
-      border-radius: 10%;
+      width: 13em;
+      height: 13em;
+      object-fit: cover;
+      border-radius: 0.5em;
     }
   }
 }

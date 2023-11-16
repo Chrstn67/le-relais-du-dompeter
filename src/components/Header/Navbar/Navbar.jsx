@@ -19,84 +19,44 @@ const Navbar = () => {
     setNavOpen(!navOpen);
   };
 
+  const navItems = [
+    { to: "/", icon: <FaHome />, text: "Accueil" },
+    { to: "/logements", icon: <FaHotel />, text: "Logements" },
+    { to: "/autour-de-vous", icon: <FaMap />, text: "Autour de vous" },
+    { to: "/infos-pratiques", icon: <FaInfo />, text: "Infos pratiques" },
+    { to: "/contact", icon: <FaEnvelope />, text: "Contact" },
+  ];
+
   return (
     <nav>
       <div className="container">
         <h1>Relais du Dompeter</h1>
 
         <div className="menu-items">
-          <Link to="/">
-            <span>
-              <FaHome />
-              <span>Accueil</span>
-            </span>
-          </Link>
-          <Link to="/logements">
-            <span>
-              <FaHotel />
-              <span>Logements</span>
-            </span>
-          </Link>
-          <Link to="/autour-de-vous">
-            <span>
-              <FaMap />
-              <span>Autour de vous</span>
-            </span>
-          </Link>
-          <Link to="/infos-pratiques">
-            <span>
-              <FaInfo />
-              <span>Infos pratiques</span>
-            </span>
-          </Link>
-          <Link to="/contact">
-            <span>
-              <FaEnvelope />
-              <span>Contact</span>
-            </span>
-          </Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to}>
+              <span>
+                {item.icon}
+                <span>{item.text}</span>
+              </span>
+            </Link>
+          ))}
         </div>
         <div className="menu-icon" onClick={toggleNav}>
-          {navOpen ? (
-            <FaTimes onClick={toggleNav} />
-          ) : (
-            <FaBars onClick={toggleNav} />
-          )}
+          {navOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
       {navOpen && (
         <div className="mobile-menu">
-          <Link to="/accueil">
-            <span>
-              <FaHome />
-              <span>Accueil</span>
-            </span>
-          </Link>
-          <Link to="/logements">
-            <span>
-              <FaHotel />
-              <span>Logements</span>
-            </span>
-          </Link>
-          <Link to="/autour-de-vous">
-            <span>
-              <FaMap />
-              <span>Autour de vous</span>
-            </span>
-          </Link>
-          <Link to="/infos-pratiques">
-            <span>
-              <FaInfo />
-              <span>Infos pratiques</span>
-            </span>
-          </Link>
-          <Link to="/contact">
-            <span>
-              <FaEnvelope />
-              <span>Contact</span>
-            </span>
-          </Link>
+          {navItems.map((item, index) => (
+            <Link key={index} to={item.to}>
+              <span>
+                {item.icon}
+                <span>{item.text}</span>
+              </span>
+            </Link>
+          ))}
         </div>
       )}
     </nav>

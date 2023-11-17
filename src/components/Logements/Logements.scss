@@ -1,27 +1,26 @@
-.intro-page {
+@import url(https://fonts.bunny.net/css?family=quintessential:400);
+
+.intro-page-logements {
   margin-top: 1em;
   text-align: center;
-
   h2 {
     font-size: 2em;
   }
-
   p {
-    font-size: 1rem;
+    font-family: "Quintessential", handwriting;
     color: #612727;
+    font-size: 1.35em;
     margin: 1em;
   }
 }
 
 .logements-list {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  ); // Réglage de la grille
-  gap: 1rem;
-  justify-content: space-between;
+  display: flex;
+
+  justify-content: center;
   align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .logement-1,
@@ -29,12 +28,13 @@
 .logement-3,
 .logement-4,
 .logement-5 {
+  width: 20em;
   text-align: center;
   margin: 1rem;
   padding: 1rem;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px #00000033;
 
   h2 {
     font-size: 1.5em;

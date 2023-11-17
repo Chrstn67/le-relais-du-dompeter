@@ -9,7 +9,6 @@ export const logementsData = [
       "TV BBox, 180 chaînes + WIFI",
       "Salle d'eau",
       "Sanitaires indépendantes",
-      "Climatisation: Oui",
     ],
     chambres: {
       nombreChambre: "2",
@@ -47,7 +46,6 @@ export const logementsData = [
       "Coin repos 6 places",
       "Coin salon",
       "Salle de bain",
-      "Climatisation: Oui",
     ],
     chambres: {
       nombreChambre: "3",
@@ -71,9 +69,10 @@ export const logementsData = [
       "Parking: Gratuit",
     ],
     photos: [
-      "/images_festivites/coxshow.jpg",
-      "/images_effort/denivele_1.png",
-      "/images_effort/denivele_2.png",
+      "/images_logement/logement_4/lgt4_chambre_1.jpg",
+      "/images_logement/logement_4/lgt4_chambre_2.jpg",
+      "/images_logement/logement_4/lgt4_sejour.jpg",
+      "/images_logement/logement_4/lgt4_sdb.jpg",
     ],
   },
   {
@@ -84,7 +83,7 @@ export const logementsData = [
       "Coin repos 8 places",
       "Coin salon",
       "Salle de bain",
-      "Climatisation: Oui",
+      "Climatisation",
     ],
     chambres: {
       nombreChambre: "1",
@@ -112,10 +111,10 @@ export const logementsData = [
       "/images_logement/logement_5/lgt5_chambre_2.jpg",
       "/images_logement/logement_5/lgt5_chambre_3.jpg",
       "/images_logement/logement_5/lgt5_chambre_4.jpg",
-      "/images_logement/logement_5/lgt5_chambre_5.jpg",
-      "/images_logement/logement_5/lgt5_chambre_6.jpg",
-      "/images_logement/logement_5/lgt5_sejour.jpg",
       "/images_logement/logement_5/lgt5_sdb.jpg",
+      "/images_logement/logement_5/lgt5_sejour_1.jpg",
+      "/images_logement/logement_5/lgt5_sejour_2.jpg",
+      "/images_logement/logement_5/lgt5_sejour_3.jpg",
     ],
   },
   {
@@ -128,7 +127,7 @@ export const logementsData = [
       "Canapé-lit",
       "TV BBox, 180 chaînes + WIFI",
       "Salle de bain",
-      "Climatisation: Oui",
+      "Climatisation",
     ],
     chambres: {
       nombreChambre: "1",
@@ -161,7 +160,6 @@ export const logementsData = [
       "Canapé-lit",
       "TV BBox, 180 chaînes + WIFI",
       "Salle de bain",
-      "Climatisation: Oui",
     ],
     chambres: {
       nombreChambre: "3",

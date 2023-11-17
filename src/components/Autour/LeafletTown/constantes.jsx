@@ -317,6 +317,18 @@ export const townMarker = [
     },
   },
   {
+    name: "Cascade du Nideck",
+    coordinates: [48.5789646, 7.284124],
+    type: "Randonnée",
+    description: "https://www.visit.alsace/218006759-Cascade-du-Nideck/",
+
+    images: {
+      effort: "/images_effort/denivele_2.png",
+      risk: "/images_risque/risque_3.png",
+      technique: "/images_technique/technique_2.png",
+    },
+  },
+  {
     name: "Temple du Donon",
     coordinates: [48.5126166, 7.1644661],
     type: "Randonnée",

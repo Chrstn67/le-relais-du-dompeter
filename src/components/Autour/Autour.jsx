@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import LeafletTown from "./LeafletTown/LeafletTown";
-import PhotoGallery from "../PhotoGallery/PhotoGallery";
 
 import "./Autour.scss";
 import { IoMdBicycle } from "react-icons/io";
@@ -57,66 +56,66 @@ const Festivites = () => {
       {
         departure: "Avolsheim",
         destination: "Molsheim",
-        trajet: "Avolsheim-Molsheim",
+        trajet: "Avolsheim > Molsheim",
       },
       {
         departure: "Molsheim",
         destination: "Avolsheim",
-        trajet: "Molsheim-Avolsheim",
+        trajet: "Molsheim > Avolsheim",
       },
       {
         departure: "Avolsheim",
         destination: "Strasbourg",
-        trajet: "Avolsheim-Marlenheim puis Marlenheim-Strasbourg",
+        trajet: "Avolsheim > Marlenheim puis Marlenheim > Strasbourg",
       },
       {
         departure: "Molsheim",
         destination: "Strasbourg",
-        trajet: "Molsheim-Marlenheim puis Marlenheim-Strasbourg",
+        trajet: "Molsheim > Marlenheim puis Marlenheim > Strasbourg",
       },
       {
         departure: "Strasbourg",
         destination: "Molsheim",
-        trajet: "Starsbourg-Marlenheim puis Marlenheim-Molsheim",
+        trajet: "Starsbourg > Marlenheim puis Marlenheim > Molsheim",
       },
       {
         departure: "Strasbourg",
         destination: "Avolsheim",
-        trajet: "Starsbourg-Marlenheim puis Marlenheim-Avolsheim",
+        trajet: "Starsbourg > Marlenheim puis Marlenheim > Avolsheim",
       },
       {
         departure: "Avolsheim",
         destination: "Saverne",
-        trajet: "Avolsheim-Wasselone puis Wasselone-Saverne",
+        trajet: "Avolsheim > Wasselone puis Wasselone > Saverne",
       },
       {
         departure: "Saverne",
         destination: "Avolsheim",
-        trajet: "Saverne-Wasselonne puis Wasselone-Avolsheim",
+        trajet: "Saverne > Wasselonne puis Wasselone > Avolsheim",
       },
 
       {
         departure: "Molsheim",
         destination: "Saverne",
-        trajet: "Molsheim-Wasselone puis Wasselone-Saverne",
+        trajet: "Molsheim > Wasselone puis Wasselone > Saverne",
       },
       {
         departure: "Saverne",
         destination: "Molsheim",
-        trajet: "Saverne-Wasselonne puis Wasselone-Molsheim",
+        trajet: "Saverne > Wasselonne puis Wasselone > Molsheim",
       },
 
       {
         departure: "Saverne",
         destination: "Strasbourg",
         trajet:
-          "Saverne-Wasselonne puis Wasselone-Marlenheim puis Marlenheim-Strasbourg",
+          "Saverne > Wasselonne puis Wasselone > Marlenheim puis Marlenheim > Strasbourg",
       },
       {
-        departure: "Starsbourg",
+        departure: "Strasbourg",
         destination: "Saverne",
         trajet:
-          "Starsbourg-Marlenheim puis Marlenheim-Wasselone puis Wasselonne-Saverne",
+          "Starsbourg > Marlenheim puis Marlenheim > Wasselone puis Wasselonne > Saverne",
       },
     ];
 
@@ -146,8 +145,8 @@ const Festivites = () => {
           <IoMdBicycle />
           <p>
             L&#39;Alsace est l&#39;une des régions les plus cyclables de France
-            ! Venez découvrir la région sur des pistes cyclables entretenues et
-            sécurisées.
+            ! <br /> Venez découvrir la région sur des pistes cyclables
+            entretenues et sécurisées.
             <br />
             Du Relais, partez en direction des villes de Molsheim, Obernai,
             Saverne ou Starsbourg, en passant par des villages uniques sur des
@@ -158,14 +157,14 @@ const Festivites = () => {
           <BiSolidBus />
           <p>
             Si vous ne souhaitez pas prendre la voiture, vous avez l&#39;option
-            du bus. Des lignes sont mises à votre disposition pour vous
+            du bus. <br /> Des lignes sont mises à votre disposition pour vous
             permettre de voyager en toute sécurité.
           </p>
           <div className="bus-trajet">
             <h4>Trajet en bus</h4>
             <form onSubmit={handleSubmit}>
               <label>
-                <span>De</span>
+                <span>De</span> <br />
                 <select
                   value={departure}
                   onChange={(e) => setDeparture(e.target.value)}
@@ -179,6 +178,7 @@ const Festivites = () => {
               </label>
               <label>
                 <span>À</span>
+                <br />
                 <select
                   value={destination}
                   onChange={(e) => setDestination(e.target.value)}
@@ -202,13 +202,6 @@ const Festivites = () => {
       </section>
       <section>
         <LeafletTown />
-      </section>
-      <section className="diaporama-paysage">
-        <h2>Tour d&#39;horizon</h2>
-        <p>Foulez le sol de ces collines bas-rhinoises !</p>
-        <div className="photos-paysages">
-          <PhotoGallery />
-        </div>
       </section>
 
       <section className="festivites">

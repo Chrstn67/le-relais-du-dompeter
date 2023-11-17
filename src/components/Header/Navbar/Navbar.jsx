@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="menu-items">
           {navItems.map((item, index) => (
             <Link key={index} to={item.to}>
-              <span>
+              <span className="icone">
                 {item.icon}
                 <span>{item.text}</span>
               </span>
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="mobile-menu">
           {navItems.map((item, index) => (
             <Link key={index} to={item.to}>
-              <span>
+              <span className="icone">
                 {item.icon}
                 <span>{item.text}</span>
               </span>

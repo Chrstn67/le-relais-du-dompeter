@@ -14,8 +14,32 @@ export const townMarker = [
   {
     name: "Office du Tourisme, Molsheim",
     coordinates: [48.54217585, 7.492266147542871],
-    type: "Office",
+    type: "OfficeTourisme",
     description: "https://www.ot-molsheim-mutzig.com/",
+  },
+  {
+    name: "Office du Tourisme, Rosheim",
+    coordinates: [48.4962836, 7.4694643],
+    type: "OfficeTourisme",
+    description: "https://www.mso-tourisme.com/",
+  },
+  {
+    name: "Office du Tourisme, Obernai",
+    coordinates: [48.4621531, 7.481153811423841],
+    type: "OfficeTourisme",
+    description: "https://www.tourisme-obernai.fr/",
+  },
+  {
+    name: "Office du Tourisme, Saverne",
+    coordinates: [48.7415603, 7.3612623],
+    type: "OfficeTourisme",
+    description: "https://www.tourisme-saverne.fr/",
+  },
+  {
+    name: "Office du Tourisme, Strasbourg",
+    coordinates: [48.5819664, 7.7499616],
+    type: "OfficeTourisme",
+    description: "https://www.visitstrasbourg.fr/",
   },
   {
     name: "Gare de Molsheim",
@@ -27,32 +51,32 @@ export const townMarker = [
   {
     name: "Cora Dorlisheim",
     coordinates: [48.527280149999996, 7.495603630372565],
-    type: "Surface",
+    type: "Supermarché",
     description: "https://www.cora.fr/magasins/dorlisheim-m-91",
   },
   {
     name: "Super U Molsheim",
     coordinates: [48.541809, 7.502510039779681],
-    type: "Surface",
+    type: "Supermarché",
     description: "https://www.coursesu.com/f-superu-molsheim-informations",
   },
   {
     name: "Recharge électrique, Cora Dorlisheim",
     coordinates: [48.52739975, 7.4973111434186475],
-    type: "Electric",
+    type: "RechargeElectrique",
     description: "",
   },
 
   {
     name: "Station-service, Cora Dorlisheim",
     coordinates: [48.525841, 7.493919],
-    type: "Fuel",
+    type: "Essence",
     description: "",
   },
   {
     name: "Station-service, Super U Molsheim",
     coordinates: [48.54145, 7.504277],
-    type: "Fuel",
+    type: "Essence",
     description: "",
   },
   {
@@ -78,13 +102,13 @@ export const townMarker = [
   {
     name: "E.Leclerc, Obernai",
     coordinates: [48.4689326, 7.496016528032877],
-    type: "Surface",
+    type: "Supermarché",
     description: "https://www.e.leclerc/mag/e-leclerc-obernai",
   },
   {
     name: "Station-service E.Leclerc, Obernai",
     coordinates: [48.46745745, 7.495896296925903],
-    type: "Fuel",
+    type: "Essence",
     description: "",
   },
   {
@@ -112,6 +136,37 @@ export const townMarker = [
     type: "Aéroport",
     description: "https://www.strasbourg.aeroport.fr/",
   },
+  {
+    name: "Aéroport de Strasbourg",
+    coordinates: [48.538870900000006, 7.625446281168612],
+    type: "Aéroport",
+    description: "https://www.strasbourg.aeroport.fr/",
+  },
+  {
+    name: "Fitness Club Concept Marlenheim",
+    coordinates: [48.615429, 7.4996351],
+    type: "Fitness",
+    description: "https://www.fitness-club-concept.fr/clubs/marlenheim/",
+  },
+  {
+    name: "Double V fitness Molsheim",
+    coordinates: [48.533879, 7.5097781],
+    type: "Fitness",
+    description:
+      "https://www.facebook.com/people/Fitness-Club-Concept-Molsheim/100063499365772/",
+  },
+  {
+    name: "Pharmacie de Dorlisheim",
+    coordinates: [48.5279951, 7.4963677],
+    type: "Pharmacie",
+    description: "https://www.pharmaciedorlisheim.fr/",
+  },
+  {
+    name: "Pharmacie d'Obernai'",
+    coordinates: [48.4644767, 7.4895411],
+    type: "Pharmacie",
+    description: "https://pharmacievignesobernai.com/",
+  },
 ];
 
 export const iconMappings = {
@@ -119,7 +174,7 @@ export const iconMappings = {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/675/675942.png",
     iconSize: [38, 38],
   },
-  Office: {
+  OfficeTourisme: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/1/1176.png",
     iconSize: [38, 38],
   },
@@ -135,16 +190,24 @@ export const iconMappings = {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/862/862819.png",
     iconSize: [38, 38],
   },
-  Surface: {
+  Supermarché: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/8422/8422894.png",
     iconSize: [38, 38],
   },
-  Fuel: {
+  Essence: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/465/465039.png",
     iconSize: [38, 38],
   },
-  Electric: {
+  RechargeElectrique: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/9877/9877537.png",
+    iconSize: [38, 38],
+  },
+  Fitness: {
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/2964/2964514.png",
+    iconSize: [38, 38],
+  },
+  Pharmacie: {
+    iconUrl: "https://cdn-icons-png.flaticon.com/512/839/839066.png",
     iconSize: [38, 38],
   },
 };

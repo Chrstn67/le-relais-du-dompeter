@@ -32,7 +32,7 @@ const Logements = () => {
 
   return (
     <>
-      <section className="intro-page">
+      <section className="intro-page-logements">
         <h2>Logements</h2>
         <p>
           Découvrez les 5 logements proposés et réservez celui qui vous

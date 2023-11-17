@@ -26,7 +26,7 @@ section {
   p {
     margin-top: 1em;
     font-family: "Quintessential", handwriting;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .signature {
     text-align: right;
@@ -36,9 +36,11 @@ section {
   }
 
   img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin: 0.5em;
   }
 }
 

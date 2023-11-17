@@ -31,7 +31,10 @@ const LeafletInfo = () => {
     <>
       <section className="intro-page">
         <h2>Informations pratiques</h2>
-        <p>Quelques adresses utiles autour du Relais du Dompeter</p>
+        <p>
+          Quelques adresses utiles autour du Relais du Dompeter : <br /> Offices
+          de tourisme, supermarchés, centres de fitness, pharmacies...
+        </p>
       </section>
       <section className="info-carte">
         <div>

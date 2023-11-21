@@ -16,6 +16,17 @@
     margin: 1em;
   }
 }
+.intro-page {
+  button {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    background-color: #612727;
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+}
 
 .festivites {
   .festivites-list {
@@ -83,8 +94,8 @@
     }
 
     img {
-      width: 13em;
-      height: 13em;
+      width: 10em;
+      height: 10em;
       object-fit: cover;
       border-radius: 0.5em;
     }

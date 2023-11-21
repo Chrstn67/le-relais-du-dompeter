@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LeafletTown from "./LeafletTown/LeafletTown";
-
+import { Link } from "react-router-dom";
 import "./Autour.scss";
 import { IoMdBicycle } from "react-icons/io";
 import { BiSolidBus } from "react-icons/bi";
@@ -134,10 +134,13 @@ const Festivites = () => {
         <p>
           Allez visiter ces endroits touristiques, historiques ou de loisirs !
           <br />
-          Partez à la découverte des plaines alsaciennes, savourez vos pauses en
-          dégustant nos spécialités régionales, participez aux festivités
-          endémiques de notre Alsace !
+          Partez à la découverte des plaines alsaciennes, participez aux
+          festivités endémiques de notre Alsace !
         </p>
+        <button>
+          <Link to={`/gastronomie`} />
+          Gastronomie
+        </button>
       </section>
       <section className="transports-trajets">
         <h3>Renseignements trajets/transport</h3>

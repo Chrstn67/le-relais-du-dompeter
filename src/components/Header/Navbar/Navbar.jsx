@@ -9,6 +9,7 @@ import {
   FaMap,
   FaEnvelope,
 } from "react-icons/fa";
+import { GrRestaurant } from "react-icons/gr";
 
 import "./Navbar.scss";
 
@@ -23,6 +24,7 @@ const Navbar = () => {
     { to: "/", icon: <FaHome />, text: "Accueil" },
     { to: "/logements", icon: <FaHotel />, text: "Logements" },
     { to: "/autour-de-vous", icon: <FaMap />, text: "Autour de vous" },
+    { to: "/gastronomie", icon: <GrRestaurant />, text: "Gastronomie" },
     { to: "/infos-pratiques", icon: <FaInfo />, text: "Infos pratiques" },
     { to: "/contact", icon: <FaEnvelope />, text: "Contact" },
   ];

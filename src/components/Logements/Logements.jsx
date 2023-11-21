@@ -38,6 +38,16 @@ const Logements = () => {
           Découvrez les 5 logements proposés et réservez celui qui vous
           convient.
         </p>
+        <button>
+          <a
+            href="https://www.booking.com/hotel/fr/relais-du-dompeter-avolsheim1.fr.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            RÉSERVEZ <br />
+            <p className="booking">Via Booking.com</p>
+          </a>
+        </button>
       </section>
 
       <section className="logements-list">

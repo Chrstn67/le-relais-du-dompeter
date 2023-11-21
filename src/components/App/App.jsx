@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import Logements from "../Logements/Logements";
 import { logementsData } from "../Logements/constantes";
 import Autour from "../Autour/Autour";
+import Gastronomie from "../Gastronomie/Gastronomie";
 import InfosPratiques from "../InfosPratiques/InfosPratiques";
 
 import Contact from "../Contact/Contact";
@@ -30,6 +31,7 @@ function App() {
             />
 
             <Route path="/autour-de-vous" element={<Autour />} />
+            <Route path="/gastronomie" element={<Gastronomie />} />
 
             <Route path="/infos-pratiques" element={<InfosPratiques />} />
             <Route path="/contact" element={<Contact />} />

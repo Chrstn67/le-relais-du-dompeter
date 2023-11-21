@@ -1,0 +1,88 @@
+.food {
+  margin-top: 1em;
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-family: "Quintessential", handwriting;
+    color: #612727;
+    font-size: 1.35em;
+    margin: 1em;
+  }
+
+  h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .picture-food {
+    margin-top: 2em;
+  }
+
+  .word-cloud {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+    justify-content: center;
+
+    .food-list {
+      font-size: 1.2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 0.5em;
+      }
+
+      p {
+        margin-top: 0.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .food-list {
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    // h2 {
+    //   font-size: 1.2em;
+    // }
+
+    // p {
+    //   font-size: 1em;
+    // }
+
+    // h3 {
+    //   font-size: 1.2rem;
+    // }
+
+    .food-list {
+      font-size: 0.9em;
+    }
+  }
+}

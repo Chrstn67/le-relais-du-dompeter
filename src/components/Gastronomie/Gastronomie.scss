@@ -1,10 +1,11 @@
 .food {
   margin-top: 1em;
   text-align: center;
-
+  // background-image: url("./images/kelch.jpeg");
   h2 {
     font-size: 2em;
   }
+
   p {
     font-family: "Quintessential", handwriting;
     color: #612727;
@@ -19,70 +20,75 @@
   }
 
   .picture-food {
-    margin-top: 2em;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  .word-cloud {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1em;
-    justify-content: center;
+    .category-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2em;
 
-    .food-list {
-      font-size: 1.2em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-
-      img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        border-radius: 0.5em;
+      .category-title {
+        font-size: 1.5em;
+        margin-bottom: 1em;
       }
 
-      p {
-        margin-top: 0.5em;
+      .word-cloud {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1em;
+        justify-items: stretch;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 0em 5em 0em 5em;
+
+        .food-list {
+          font-size: 1.2em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 0.5em;
+          }
+
+          p {
+            margin-top: 0.5em;
+          }
+        }
       }
     }
   }
 
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 1.5em;
-    }
-
-    p {
-      font-size: 1.1em;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-    }
-
+  @media screen and (min-width: 480px) {
     .food-list {
       font-size: 1em;
     }
   }
 
-  @media screen and (max-width: 480px) {
-    // h2 {
-    //   font-size: 1.2em;
-    // }
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 2em;
+    }
 
-    // p {
-    //   font-size: 1em;
-    // }
+    p {
+      margin: 1em;
+    }
 
-    // h3 {
-    //   font-size: 1.2rem;
-    // }
+    h3 {
+      font-size: 2rem;
+    }
 
     .food-list {
-      font-size: 0.9em;
+      font-size: 1.2em;
     }
   }
 }

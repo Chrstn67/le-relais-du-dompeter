@@ -16,15 +16,17 @@
     margin: 1em;
   }
 }
-.intro-page {
-  button {
-    font-size: 1rem;
-    padding: 0.5em 1em;
-    background-color: #612727;
+
+.link-to-gastro {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background-color: #612727;
+
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  span {
     color: #fff;
-    border: none;
-    border-radius: 0.3em;
-    cursor: pointer;
   }
 }
 

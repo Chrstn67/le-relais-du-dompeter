@@ -68,6 +68,30 @@
     }
   }
 
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #61272780;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    img {
+      width: 20em;
+      height: 10em;
+      object-fit: cover;
+      border-radius: 0.5em;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     .food-list {
       font-size: 1em;

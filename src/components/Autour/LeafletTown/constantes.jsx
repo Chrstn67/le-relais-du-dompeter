@@ -259,19 +259,7 @@ export const townMarker = [
     type: "Mémorial",
     description: "https://www.memorial-alsace-moselle.com/",
   },
-  {
-    name: "Zum Loejelgucker",
-    coordinates: [48.5945119, 7.4666984],
-    type: "Restaurant",
-    description: "https://aubergedetraenheim.com/",
-  },
-  {
-    name: "Auberge de la Bruche",
-    coordinates: [48.5616128, 7.5305405],
-    type: "Restaurant",
-    description:
-      "https://www.auberge-bruche.com/fr/restaurant-auberge-bruche-cuisine-gastronomique",
-  },
+
   {
     name: "Stade de la Meinau (Racing Club de Strasbourg Alsace)",
     coordinates: [48.5600477, 7.755125193344087],
@@ -423,10 +411,7 @@ export const iconMappings = {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/3928/3928370.png",
     iconSize: [38, 38],
   },
-  Restaurant: {
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/5766/5766813.png",
-    iconSize: [38, 38],
-  },
+
   Sport: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/147/147215.png",
     iconSize: [38, 38],

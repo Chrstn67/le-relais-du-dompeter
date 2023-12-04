@@ -137,9 +137,10 @@ const Festivites = () => {
           Partez à la découverte des plaines alsaciennes, participez aux
           festivités endémiques de notre Alsace !
         </p>
-        <button>
-          <Link to={`/gastronomie`} />
-          Gastronomie
+        <button className="link-to-gastro">
+          <Link to={`/gastronomie`}>
+            <span>Gastronomie</span>
+          </Link>
         </button>
       </section>
       <section className="transports-trajets">

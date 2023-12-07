@@ -35,27 +35,27 @@ export const restoMarker = [
   },
 
   {
-    name: "Pâtisserie Felder-Lesecq - Mutzig",
+    name: "Pâtisserie Felder-Lesecq",
     coordinates: [48.5384702, 7.4560699],
     type: "Pâtisserie",
     description: "https://www.lespatissiers.fr/",
   },
 
   {
-    name: "Pâtisserie Benjamin - Marlenheim",
+    name: "Pâtisserie Benjamin",
     coordinates: [48.615722, 7.498298],
     type: "Pâtisserie",
     description: "https://patisserie-benjamin.fr/",
   },
   {
-    name: "Pâtisserie Klugesherz - Soultz-Les-Bains",
+    name: "Pâtisserie Klugesherz",
     coordinates: [48.5682502, 7.4922681],
     type: "Pâtisserie",
     description: "https://www.patisserie-klugesherz.com/",
   },
 
   {
-    name: "Boulangerie-Patisserie Goesel - Molsheim",
+    name: "Boulangerie-Patisserie Goesel",
     coordinates: [48.5440527, 7.4927336],
     type: "Pâtisserie",
     description:
@@ -63,22 +63,14 @@ export const restoMarker = [
   },
 
   {
-    name: "Boulangerie-Patisserie Goesel - Molsheim",
-    coordinates: [48.5440527, 7.4927336],
-    type: "Pâtisserie",
-    description:
-      "https://www.boulangeriespatisseries.fr/boulangerie-patisserie-goesel-molsheim.html",
-  },
-
-  {
-    name: "Patisserie Schaditzki - Molsheim",
+    name: "Patisserie Schaditzki",
     coordinates: [48.54277135843587, 7.50522973140814],
     type: "Pâtisserie",
     description:
       "https://www.facebook.com/people/Patisserie-Schaditzki/100063526931421/",
   },
   {
-    name: "Patisserie Gross - Rosheim",
+    name: "Patisserie Gross",
     coordinates: [48.50309754244792, 7.49593308494638],
     type: "Pâtisserie",
     description: "https://www.gross.fr/",

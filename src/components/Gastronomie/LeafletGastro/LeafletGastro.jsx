@@ -30,6 +30,10 @@ const LeafletInfo = () => {
   return (
     <>
       <section className="info-carte">
+        <section className="intro-page">
+          <h2>Bonnes adresses</h2>
+          <p>Envie d'une pause réconfortante ?</p>
+        </section>
         <div>
           <label htmlFor="filter">Filtrer par: </label>
           <select id="filter" onChange={handleTypeChange} value={selectedType}>
@@ -43,7 +47,7 @@ const LeafletInfo = () => {
         <MapContainer
           center={mapCenter}
           zoom={13}
-          style={{ height: "500px", width: "100%" }}
+          style={{ height: "400px", width: "100%" }}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

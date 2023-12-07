@@ -37,7 +37,6 @@ const LeafletTown = () => {
             Visiter le site
           </a>
           <br />
-          <br />
           <div className="infos-randos">
             <h6>Infos:</h6>
             <span>Niveau d&#39;effort: </span>

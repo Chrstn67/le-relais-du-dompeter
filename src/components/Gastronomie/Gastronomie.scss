@@ -43,7 +43,7 @@
         justify-items: stretch;
         justify-content: space-between;
         align-items: baseline;
-        margin: 0em 5em 0em 5em;
+        margin: 0em 4em 0em 4em;
 
         .food-list {
           font-size: 1.2em;
@@ -52,6 +52,7 @@
           align-items: center;
           justify-content: flex-end;
           width: 100%;
+          cursor: pointer;
 
           img {
             width: 100%;
@@ -78,17 +79,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    z-index: 9999;
 
-  .modal-content {
-    background: #fff;
-    padding: 1em;
-    border-radius: 8px;
-    img {
-      width: 20em;
-      height: 10em;
-      object-fit: cover;
+    .modal-content {
+      background: #fff;
+      margin: 1em;
+      padding: 1em;
+      border-radius: 8px;
+      max-height: 80%;
+      overflow-y: auto;
+    }
+    button {
+      background-color: #612727;
+      border: none;
+      padding: 1em;
+      margin-bottom: 1em;
       border-radius: 0.5em;
+      color: #fff;
     }
   }
 

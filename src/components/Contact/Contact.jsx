@@ -15,7 +15,7 @@ const ContactPage = () => {
 
       <section className="contact-info">
         <h2>Informations de contact</h2>
-        <p>Marie-Josée &#39;Marie-Jo&#39; BRUCKER</p>
+        <p>Marie-Josée &#39;Marie-Jo&#39; VETTER-BRUCKER</p>
         <p>
           <span>Adresse: </span> <br /> 2, Rue du Dompeter 67120 AVOLSHEIM
         </p>

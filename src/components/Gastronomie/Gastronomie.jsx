@@ -132,7 +132,11 @@ const Gastronomie = () => {
       <section className="food">
         <div>
           <h3>e Gueter !</h3>
-          <p>Savourez vos pauses en dégustant nos spécialités régionales !</p>
+          <p>
+            Savourez vos pauses en dégustant nos spécialités régionales ! <br />{" "}
+            Cliquez sur une image pour plus d'informations sur les spécialités
+            de notre belle région !
+          </p>{" "}
         </div>
         <div className="picture-food">
           <section className="category-container column">

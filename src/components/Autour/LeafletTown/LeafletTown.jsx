@@ -36,9 +36,7 @@ const LeafletTown = () => {
           >
             Visiter le site
           </a>
-          <br />
-          <div className="infos-randos">
-            <h6>Infos:</h6>
+          <section className="infos-randos">
             <span>Niveau d&#39;effort: </span>
             <div>
               <img src={marker.images.effort} alt="Niveau d'effort" />
@@ -51,7 +49,7 @@ const LeafletTown = () => {
             <div>
               <img src={marker.images.technique} alt="Niveau technique" />
             </div>
-          </div>
+          </section>
         </Popup>
       );
     } else {

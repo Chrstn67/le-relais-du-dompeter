@@ -5,12 +5,7 @@ export const townMarker = [
     type: "Hôtel",
     description: "Relais du Dompeter",
   },
-  {
-    name: "Marché de Molsheim",
-    coordinates: [48.541851199999996, 7.492327559738713],
-    type: "Marché",
-    description: "Lundi matin",
-  },
+
   {
     name: "Office du Tourisme, Molsheim",
     coordinates: [48.54217585, 7.492266147542871],
@@ -79,12 +74,6 @@ export const townMarker = [
     type: "Essence",
     description: "",
   },
-  {
-    name: "Marché de Saverne",
-    coordinates: [48.74199265, 7.362353577235925],
-    type: "Marché",
-    description: "Jeudi matin",
-  },
 
   {
     name: "Gare de Saverne'",
@@ -93,12 +82,6 @@ export const townMarker = [
     description: "https://www.garesetconnexions.sncf/fr/gares-services/saverne",
   },
 
-  {
-    name: "Marché d'Obernai",
-    coordinates: [48.462212199999996, 7.482380674397319],
-    type: "Marché",
-    description: "Jeudi matin",
-  },
   {
     name: "E.Leclerc, Obernai",
     coordinates: [48.4689326, 7.496016528032877],
@@ -117,12 +100,7 @@ export const townMarker = [
     type: "Gare",
     description: "https://www.garesetconnexions.sncf/fr/gares-services/obernai",
   },
-  {
-    name: "Strasbourg",
-    coordinates: [48.585184350000006, 7.7427717555242035],
-    type: "Marché",
-    description: "Lundi de 7.00 à 19.00",
-  },
+
   {
     name: "Gare de Strasbourg",
     coordinates: [48.5852933, 7.7339249],
@@ -186,10 +164,7 @@ export const iconMappings = {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/2169/2169353.png",
     iconSize: [38, 38],
   },
-  Marché: {
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/862/862819.png",
-    iconSize: [38, 38],
-  },
+
   Supermarché: {
     iconUrl: "https://cdn-icons-png.flaticon.com/512/8422/8422894.png",
     iconSize: [38, 38],

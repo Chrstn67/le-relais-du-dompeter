@@ -1,0 +1,199 @@
+@import url(https://fonts.bunny.net/css?family=fleur-de-leah:400);
+@import url(https://fonts.bunny.net/css?family=quintessential:400);
+
+.intro-page,
+.festivites,
+.diaporama-paysage {
+  margin-top: 1em;
+  text-align: center;
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-family: "Quintessential", handwriting;
+    color: #612727;
+    font-size: 1.35em;
+    margin: 1em;
+  }
+}
+
+.link-to-gastro {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background-color: #612727;
+
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  span {
+    color: #fff;
+  }
+}
+
+.festivites {
+  .festivites-list {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  .festivite-item {
+    position: relative;
+    width: 80%;
+    padding: 1rem;
+    background-color: #d4eaf1;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    &:nth-child(even) {
+      align-self: flex-end;
+    }
+
+    &:nth-child(odd) {
+      align-self: flex-start;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      background-color: #61272791;
+      p {
+        color: #d4eaf1;
+      }
+    }
+
+    h3 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2rem;
+      color: #612727;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #000e55;
+      background-color: #f9f9f9;
+      padding: 0.2em;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    img {
+      width: 10em;
+      height: 10em;
+      object-fit: cover;
+      border-radius: 0.5em;
+    }
+  }
+}
+
+.transports-trajets {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+
+  h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+
+  .velo,
+  .bus {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    svg {
+      font-size: 2em;
+      color: #612727;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1em;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .bus-trajet {
+      h4 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 1em;
+      }
+
+      form {
+        margin-bottom: 1em;
+
+        label {
+          display: block;
+          margin-bottom: 0.5em;
+
+          span {
+            font-size: 1.2em;
+            color: #333;
+            margin-right: 0.5em;
+          }
+
+          select {
+            background-color: #cac2c2;
+            font-size: 1rem;
+            padding: 0.5em;
+            outline: 1px solid #ccc;
+            border-radius: 0.3em;
+            option {
+              background-color: #f3f2f2;
+            }
+          }
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 0.5em 1em;
+          background-color: #612727;
+          color: #fff;
+          border: none;
+          border-radius: 0.3em;
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 1em;
+      background-color: #612727;
+
+      li {
+        font-size: 1.2rem;
+        color: #fff;
+
+        padding: 0.3em;
+      }
+    }
+  }
+}

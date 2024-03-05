@@ -1,0 +1,78 @@
+nav {
+  background-color: #000000;
+  padding: 0.5em;
+  border-bottom: 1px solid #333;
+  background-image: url("./LogoDompeter.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto 100%;
+  margin-bottom: 0.1em;
+  position: relative;
+  z-index: 1;
+
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .menu-items {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+
+    svg {
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .menu-items {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

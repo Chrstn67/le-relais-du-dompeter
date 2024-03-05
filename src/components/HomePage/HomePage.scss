@@ -1,0 +1,62 @@
+@import url(https://fonts.bunny.net/css?family=fleur-de-leah:400);
+@import url(https://fonts.bunny.net/css?family=quintessential:400);
+
+section {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-family: "Quintessential", handwriting;
+    font-size: 1.5em;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+  p {
+    margin-top: 1em;
+    font-family: "Quintessential", handwriting;
+    font-size: 1.3em;
+  }
+  .signature {
+    text-align: right;
+    margin-bottom: 1em;
+    font-family: "Fleur De Leah", handwriting;
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin: 0.5em;
+  }
+}
+
+.services {
+  text-align: center;
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0.5em 0;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import url(https://fonts.bunny.net/css?family=quintessential:400);
+
+.intro-page-logements {
+  margin-top: 1em;
+  text-align: center;
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-family: "Quintessential", handwriting;
+    color: #612727;
+    font-size: 1.35em;
+    margin: 1em;
+  }
+  button {
+    background-color: #612727;
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.5em;
+      p {
+        font-size: 0.7em;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.logements-list {
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logement-1,
+.logement-2,
+.logement-3,
+.logement-4,
+.logement-5 {
+  width: 20em;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #00000033;
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-logement {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    img {
+      width: 13em;
+      height: 13em;
+      object-fit: cover;
+      border-radius: 0.5em;
+    }
+  }
+
+  .buttons-carousel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.5rem;
+
+    button {
+      font-size: 1rem;
+      background-color: #612727;
+    }
+  }
+
+  .description {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .electro {
+      margin-top: 1em;
+    }
+
+    .chambres {
+      margin-top: 1em;
+      h5 {
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 0.5rem 0;
+          font-size: 1rem;
+          white-space: pre-line;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logements-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

@@ -31,11 +31,7 @@ export const logementsData = [
       "Wifi: Gratuit",
       "Parking: Gratuit",
     ],
-    photos: [
-      "/images_festivites/coxshow.jpg",
-      "/images_effort/denivele_1.png",
-      "/images_effort/denivele_2.png",
-    ],
+    photos: ["", "", ""],
   },
 
   {
@@ -69,10 +65,10 @@ export const logementsData = [
       "Parking: Gratuit",
     ],
     photos: [
-      "/images_logement/logement_4/lgt4_chambre_1.jpg",
-      "/images_logement/logement_4/lgt4_chambre_2.jpg",
-      "/images_logement/logement_4/lgt4_sejour.jpg",
-      "/images_logement/logement_4/lgt4_sdb.jpg",
+      "images_logement/logement_4/lgt4_chambre_1.jpg",
+      "images_logement/logement_4/lgt4_chambre_2.jpg",
+      "images_logement/logement_4/lgt4_sejour.jpg",
+      "images_logement/logement_4/lgt4_sdb.jpg",
     ],
   },
   {
@@ -107,14 +103,14 @@ export const logementsData = [
       "Parking: Gratuit",
     ],
     photos: [
-      "/images_logement/logement_5/lgt5_chambre_1.jpg",
-      "/images_logement/logement_5/lgt5_chambre_2.jpg",
-      "/images_logement/logement_5/lgt5_chambre_3.jpg",
-      "/images_logement/logement_5/lgt5_chambre_4.jpg",
-      "/images_logement/logement_5/lgt5_sdb.jpg",
-      "/images_logement/logement_5/lgt5_sejour_1.jpg",
-      "/images_logement/logement_5/lgt5_sejour_2.jpg",
-      "/images_logement/logement_5/lgt5_sejour_3.jpg",
+      "images_logement/logement_5/lgt5_chambre_1.jpg",
+      "images_logement/logement_5/lgt5_chambre_2.jpg",
+      "images_logement/logement_5/lgt5_chambre_3.jpg",
+      "images_logement/logement_5/lgt5_chambre_4.jpg",
+      "images_logement/logement_5/lgt5_sdb.jpg",
+      "images_logement/logement_5/lgt5_sejour_1.jpg",
+      "images_logement/logement_5/lgt5_sejour_2.jpg",
+      "images_logement/logement_5/lgt5_sejour_3.jpg",
     ],
   },
   {
@@ -148,7 +144,7 @@ export const logementsData = [
       "Wifi: Gratuit",
       "Parking: Gratuit",
     ],
-    photos: ["/images_logement/logement_6/lgt6_sejour.jpg"],
+    photos: ["images_logement/logement_6/lgt6_sejour.jpg"],
   },
   {
     id: 5,
@@ -182,10 +178,6 @@ export const logementsData = [
       "Wifi: Gratuit",
       "Parking: Gratuit",
     ],
-    photos: [
-      "/images_festivites/coxshow.jpg",
-      "/images_effort/denivele_1.png",
-      "/images_effort/denivele_2.png",
-    ],
+    photos: ["", "", ""],
   },
 ];

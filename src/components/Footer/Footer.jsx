@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <img
         className="logo"
-        src="/LogoDompeter.jpg"
+        src="LogoDompeter.jpg"
         alt="Logo relais du Dompeter"
       />
 
@@ -26,7 +26,7 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Relais du Dompeter. <br /> Tous droits
         réservés.
       </p>
-      <img className="logoDev" src="/Logo.jpg" alt="Logo développeur" />
+      <img className="logoDev" src="Logo.jpg" alt="Logo développeur" />
     </footer>
   );
 };

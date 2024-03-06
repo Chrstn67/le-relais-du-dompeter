@@ -22,7 +22,9 @@ function Promo() {
 
   return (
     <div className={`promo ${isPromoVisible ? "visible" : "hidden"}`}>
-      <p>10% de réduction sur votre séjour du 15 au 30 janvier 2024 !</p>
+      <p>
+        10% de réduction sur votre séjour du 15 au 30 janvier 2024 ! (FICTIF)
+      </p>
     </div>
   );
 }

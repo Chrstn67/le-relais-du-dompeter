@@ -2,7 +2,7 @@ import Navbar from "./Navbar/Navbar";
 import Bandeau from "./Bandeau/Bandeau";
 import Promo from "./Promo/Promo";
 
-import "./header.scss";
+import "./Header.scss";
 
 export default function Header({ children }) {
   return (

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import {
   FaBars,
-  FaTimes,
   FaHome,
   FaHotel,
   FaInfo,
@@ -18,6 +17,10 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
   };
 
   const navItems = [
@@ -45,14 +48,14 @@ const Navbar = () => {
           ))}
         </div>
         <div className="menu-icon" onClick={toggleNav}>
-          {navOpen ? <FaTimes /> : <FaBars />}
+          <FaBars />
         </div>
       </div>
 
       {navOpen && (
         <div className="mobile-menu">
           {navItems.map((item, index) => (
-            <Link key={index} to={item.to}>
+            <Link key={index} to={item.to} onClick={closeNav}>
               <span className="icone">
                 {item.icon}
                 <span>{item.text}</span>

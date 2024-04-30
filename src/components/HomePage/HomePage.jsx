@@ -1,7 +1,26 @@
+import React, { useState, useEffect } from "react";
 import "./HomePage.scss";
 import PhotoGallery from "./PhotoGallery/PhotoGallery";
 
 const Accueil = () => {
+  const servicesArray = [
+    "Mariages",
+    "Receptions",
+    "Séminaires",
+    "Nuitées",
+    "Séjours",
+  ].filter(Boolean);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % servicesArray.length);
+    }, 3500);
+
+    return () => clearInterval(intervalId);
+  }, [servicesArray]);
+
   return (
     <>
       <section className="photos-home">
@@ -60,13 +79,9 @@ const Accueil = () => {
 
       <section className="services">
         <h2>Services</h2>
-        <p>Joignez l&#39;utile à l&#39;agréable !</p>
+
         <ul>
-          <li>Mariages</li>
-          <li>Receptions</li>
-          <li>Séminaires</li>
-          <li>Nuitées</li>
-          <li>Séjours</li>
+          <li>{servicesArray[currentIndex]}</li>
         </ul>
       </section>
     </>

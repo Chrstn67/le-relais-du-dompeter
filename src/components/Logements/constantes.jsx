@@ -65,9 +65,11 @@ export const logementsData = [
       "Parking: Gratuit",
     ],
     photos: [
-      "images_logement/logement_4/lgt4_chambre_1.jpg",
-      "images_logement/logement_4/lgt4_chambre_2.jpg",
+      "images_logement/logement_4/lgt4_chambre1.jpg",
+      "images_logement/logement_4/lgt4_chambre2.jpg",
+      "images_logement/logement_4/lgt4_salon.jpg",
       "images_logement/logement_4/lgt4_sejour.jpg",
+      "images_logement/logement_4/lgt4_cuisine.jpg",
       "images_logement/logement_4/lgt4_sdb.jpg",
     ],
   },
@@ -178,6 +180,13 @@ export const logementsData = [
       "Wifi: Gratuit",
       "Parking: Gratuit",
     ],
-    photos: ["", "", ""],
+    photos: [
+      "images_logement/logement_7/chambre1.jpg",
+      "images_logement/logement_7/chambre2.jpg",
+      "images_logement/logement_7/salle-manger.jpg",
+      "images_logement/logement_7/cuisine.jpg",
+      "images_logement/logement_7/salon.jpg",
+      "images_logement/logement_7/sdb.jpg",
+    ],
   },
 ];

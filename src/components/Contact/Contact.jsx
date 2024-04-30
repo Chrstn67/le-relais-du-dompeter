@@ -19,15 +19,14 @@ const ContactPage = () => {
         <p>
           <span>Adresse: </span> <br /> 2, Rue du Dompeter 67120 AVOLSHEIM
         </p>
+
         <p>
           <span>Téléphone:</span> <br />{" "}
-          <a href="tel:06XXXXXXXX">06 XX XX XX XX</a>
+          <a href="tel:0765161969">07 65 16 19 69 </a>
         </p>
         <p>
           <span>Email:</span> <br />
-          <a href="mailto:le-relais-du-dompeter@test.com">
-            le-relais-du-dompeter@test.com
-          </a>
+          <a href="mailto:mjo.vetter@gmail.com ">mjo.vetter@gmail.com</a>
         </p>
       </section>
     </>

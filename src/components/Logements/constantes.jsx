@@ -39,14 +39,14 @@ export const logementsData = [
     titre: "Logement n°4",
     description: "Duplex 75m², pour 5 personnes",
     caracteristiquesGenerales: [
-      "Coin repos 6 places",
+      "Coin repos 5 places",
       "Coin salon",
       "Salle de bain",
     ],
     chambres: {
       nombreChambre: "3",
       chambre_1: ["1 lit individuel 90cm/200cm"],
-      chambre_2: ["2 lits jumeaux 90cm/200cm"],
+      chambre_2: ["1 lit double 140cm/190cm"],
       chambre_3: ["1 lit double 140cm/190cm"],
     },
     accesHandicape: true,
@@ -78,7 +78,7 @@ export const logementsData = [
     titre: "Logement n°5",
     description: "Duplex 75m², pour 5 personnes",
     caracteristiquesGenerales: [
-      "Coin repos 8 places",
+      "Coin repos 6 places",
       "Coin salon",
       "Salle de bain",
       "Climatisation",
@@ -129,7 +129,7 @@ export const logementsData = [
     ],
     chambres: {
       nombreChambre: "1",
-      chambre_1: ["1 lit double 160cm/190cm"],
+      chambre_1: ["1 lit 160cm/200cm"],
     },
     accesHandicape: true,
     appareilsElectromenagers: [
@@ -161,9 +161,8 @@ export const logementsData = [
     ],
     chambres: {
       nombreChambre: "3",
-      chambre_1: ["1 lit double 160cm/200cm, 1 lit simple 90/190cm"],
-      chambre_2: ["1 lit gigogne"],
-      chambre_3: ["2 lits simples 90cm/190cm"],
+      chambre_1: ["1 lit 160cm/200cm"],
+      chambre_2: ["1 lit 140cm/190cm"],
     },
     accesHandicape: true,
     appareilsElectromenagers: [
@@ -181,12 +180,12 @@ export const logementsData = [
       "Parking: Gratuit",
     ],
     photos: [
-      "images_logement/logement_7/chambre1.jpg",
-      "images_logement/logement_7/chambre2.jpg",
-      "images_logement/logement_7/salle-manger.jpg",
-      "images_logement/logement_7/cuisine.jpg",
-      "images_logement/logement_7/salon.jpg",
-      "images_logement/logement_7/sdb.jpg",
+      "images_logement/logement_7/lgt7_chambre1.jpg",
+      "images_logement/logement_7/lgt7_chambre2.jpg",
+
+      "images_logement/logement_7/lgt7_cuisine.jpg",
+      "images_logement/logement_7/lgt7_salon.jpg",
+      "images_logement/logement_7/lgt7_sdb.jpg",
     ],
   },
 ];

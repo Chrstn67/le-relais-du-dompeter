@@ -7,22 +7,19 @@ function MentionsLegales() {
       <h1>Mentions Légales</h1>
 
       <h2>1. Informations générales</h2>
-      <p>Raison sociale de l&#39;entreprise : [Nom de l&#39;entreprise]</p>
-      <p>Statut juridique : [Statut juridique de l&#39;entreprise]</p>
-      <p>Numéro SIRET : [Numéro SIRET de l&#39;entreprise]</p>
-      <p>Adresse : [Adresse de l&#39;entreprise]</p>
-      <p>Numéro de téléphone : [Numéro de téléphone de l&#39;entreprise]</p>
-      <p>Adresse e-mail : [Adresse e-mail de l&#39;entreprise]</p>
+      <p>Raison sociale de l&#39;entreprise : Relais du Dompeter</p>
+      <p>Adresse : 2, Rue du Dompeter 67120 AVOLSHEIM</p>
+      <p>Numéro de téléphone : 07 65 16 19 69 </p>
+      <p>Adresse e-mail : mjo.vetter@gmail.com</p>
 
       <h2>2. Directeur de la publication</h2>
       <p>
-        Nom et prénom du directeur de la publication : [Nom du directeur de la
-        publication]
+        Nom et prénom du directeur de la publication : Marie-Josée
+        VETTER-BRUCKER
       </p>
 
       <h2>3. Hébergement du site</h2>
-      <p>Nom de l&#39;hébergeur : [Nom de l&#39;hébergeur]</p>
-      <p>Adresse de l&#39;hébergeur : [Adresse de l&#39;hébergeur]</p>
+      <p>Nom de l&#39;hébergeur : OVH</p>
 
       <h2>4. Propriété intellectuelle</h2>
       <p>

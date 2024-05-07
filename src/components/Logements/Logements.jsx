@@ -38,16 +38,15 @@ const Logements = () => {
           Découvrez les 5 logements proposés et réservez celui qui vous
           convient.
         </p>
-        <button>
-          <a
-            href="https://www.booking.com/hotel/fr/relais-du-dompeter-avolsheim1.fr.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            RÉSERVEZ <br />
-            <p className="booking">Via Booking.com</p>
-          </a>
-        </button>
+
+        <a
+          href="https://www.booking.com/hotel/fr/relais-du-dompeter-avolsheim1.fr.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          RÉSERVEZ <br />
+          <p className="booking">Via Booking.com</p>
+        </a>
       </section>
 
       <section className="logements-list">
@@ -71,16 +70,18 @@ const Logements = () => {
                 />
               ))}
               <div className="buttons-carousel">
-                <BsFillArrowLeftSquareFill
-                  size={30}
-                  type="button"
-                  onClick={() => prevSlide(logementIndex)}
-                />
-                <BsFillArrowRightSquareFill
-                  size={30}
-                  type="button"
-                  onClick={() => nextSlide(logementIndex)}
-                />
+                <button>
+                  <BsFillArrowLeftSquareFill
+                    size={30}
+                    onClick={() => prevSlide(logementIndex)}
+                  />
+                </button>
+                <button>
+                  <BsFillArrowRightSquareFill
+                    size={30}
+                    onClick={() => nextSlide(logementIndex)}
+                  />
+                </button>
               </div>
             </div>
 
@@ -106,11 +107,9 @@ const Logements = () => {
 
               <div className="chambres">
                 <p>Chambres:</p>
-                <ul>
-                  <li>
-                    <span>Nombre de chambres:</span>{" "}
-                    {logement.chambres.nombreChambre}
-                  </li>
+                <dl>
+                  <dt>Nombre de chambres:</dt>
+                  <dd>{logement.chambres.nombreChambre}</dd>
                   {Object.keys(logement.chambres).map((chambreKey) => {
                     if (chambreKey !== "nombreChambre") {
                       const chambreName = chambreKey.replace("_", " ");
@@ -122,20 +121,20 @@ const Logements = () => {
                         logement.chambres[chambreKey][0].split(", ");
 
                       return (
-                        <li key={chambreKey}>
-                          <span>{chambreDisplayName}:</span> <br />
+                        <React.Fragment key={chambreKey}>
+                          <dt>{chambreDisplayName}:</dt>
                           {chambreItems.map((item, index) => (
                             <React.Fragment key={index}>
-                              {item}
-                              {index < chambreItems.length - 1 && <br />}{" "}
+                              <dd>{item}</dd>
+                              {index < chambreItems.length - 1 && <br />}
                             </React.Fragment>
                           ))}
-                        </li>
+                        </React.Fragment>
                       );
                     }
                     return null;
                   })}
-                </ul>
+                </dl>
               </div>
             </div>
           </section>

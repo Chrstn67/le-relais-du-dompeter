@@ -152,7 +152,13 @@ export const logementsData = [
       "Wifi: Gratuit",
       "Parking: Gratuit",
     ],
-    photos: ["images_logement/logement_6/lgt6_sejour.jpg"],
+    photos: [
+      "images_logement/logement_6/lgt6_sejour.jpg",
+      "images_logement/logement_6/lgt6_sejour_2.jpg",
+      "images_logement/logement_6/lgt6_cuisine.jpg",
+      "images_logement/logement_6/lgt6_chambre_1.jpg",
+      "images_logement/logement_6/lgt6_sdb.jpg",
+    ],
   },
   {
     id: 5,

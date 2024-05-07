@@ -157,16 +157,17 @@ const Gastronomie = () => {
               {foodData
                 .filter((foodItem) => foodItem.category === "salé")
                 .map((foodItem, index) => (
-                  <li
-                    key={`sale-${index}`}
-                    className="food-list"
-                    onClick={() => handleFoodItemClick(foodItem.name)}
-                  >
-                    <img
-                      src={`./images/Gastronomie/${foodItem.image}`}
-                      alt={foodItem.name}
-                    />
-                    <p>{foodItem.name}</p>
+                  <li key={`sale-${index}`} className="food-list">
+                    <button
+                      className="food-button"
+                      onClick={() => handleFoodItemClick(foodItem.name)}
+                    >
+                      <img
+                        src={`./images/Gastronomie/${foodItem.image}`}
+                        alt={foodItem.name}
+                      />
+                      <p>{foodItem.name}</p>
+                    </button>
                   </li>
                 ))}
             </ul>
@@ -177,24 +178,25 @@ const Gastronomie = () => {
               {foodData
                 .filter((foodItem) => foodItem.category === "sucré")
                 .map((foodItem, index) => (
-                  <li
-                    key={`sucre-${index}`}
-                    className="food-list"
-                    onClick={() => handleFoodItemClick(foodItem.name)}
-                  >
-                    <img
-                      src={`./images/Gastronomie/${foodItem.image}`}
-                      alt={foodItem.name}
-                    />
-                    <p>{foodItem.name}</p>
+                  <li key={`sale-${index}`} className="food-list">
+                    <button
+                      className="food-button"
+                      onClick={() => handleFoodItemClick(foodItem.name)}
+                    >
+                      <img
+                        src={`./images/Gastronomie/${foodItem.image}`}
+                        alt={foodItem.name}
+                      />
+                      <p>{foodItem.name}</p>
+                    </button>
                   </li>
                 ))}
             </ul>
           </section>
         </div>
         {selectedFood && (
-          <aside className="modal-overlay" onClick={handleCloseModal}>
-            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <dialog open className="modal-overlay">
+            <div className="modal-content">
               <h2>{selectedFood}</h2>
               <p>
                 {
@@ -207,7 +209,7 @@ const Gastronomie = () => {
               </p>
               <button onClick={handleCloseModal}>Fermer</button>
             </div>
-          </aside>
+          </dialog>
         )}
       </section>
       <LeafletGastro />

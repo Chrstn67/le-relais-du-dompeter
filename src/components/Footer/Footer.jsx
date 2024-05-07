@@ -17,15 +17,15 @@ const Footer = () => {
                 Conditions générales d&#39;utilisation
               </Link>
             </li> */}
+        <p>
+          &copy; {new Date().getFullYear()} Relais du Dompeter. <br /> Tous
+          droits réservés.
+        </p>
         <li>
           <Link to="/mentions-legales">Mentions légales</Link>
         </li>
       </ul>
 
-      <p>
-        &copy; {new Date().getFullYear()} Relais du Dompeter. <br /> Tous droits
-        réservés.
-      </p>
       <img className="logoDev" src="Logo.jpg" alt="Logo développeur" />
     </footer>
   );

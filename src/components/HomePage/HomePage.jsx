@@ -16,7 +16,7 @@ const Accueil = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % servicesArray.length);
-    }, 3500);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, [servicesArray]);

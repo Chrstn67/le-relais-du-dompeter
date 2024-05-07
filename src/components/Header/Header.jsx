@@ -9,7 +9,7 @@ export default function Header({ children }) {
     <header>
       <section className="Logo-Title">
         <h1>Relais du Dompeter</h1>
-        <img src="./LogoDompeter.jpg"></img>
+        <img src="./LogoDompeter.png"></img>
       </section>
 
       <Navbar />

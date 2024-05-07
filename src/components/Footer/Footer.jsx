@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <img
         className="logo"
-        src="LogoDompeter.jpg"
+        src="LogoDompeter.png"
         alt="Logo relais du Dompeter"
       />
 

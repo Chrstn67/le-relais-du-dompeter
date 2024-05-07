@@ -74,6 +74,10 @@ const Accueil = () => {
             src="./images/Relais/piscine_2.jpg"
             alt="Cour intérieure du Relais du Dompeter"
           ></img>
+          <img
+            src="./images/Relais/arriere_cours.jpg"
+            alt="Cour vue du fond de la propriété"
+          ></img>
         </div>
       </section>
 

@@ -1,76 +1,105 @@
-nav {
-  background-color: #000000;
-  padding: 0.5em;
-  border-bottom: 1px solid #333;
-  background-image: url("/LogoDompeter.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 100%;
-  margin-bottom: 0.1em;
-  position: relative;
-  z-index: 1;
+.Navbar {
+  background-color: #612727;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 0.5em;
 
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
+  @media screen and (max-width: 768px) {
+    border-radius: 0.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    background-color: transparent;
   }
 
   .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
 
-    a {
-      color: #fff;
-      text-decoration: none;
+    @media screen and (max-width: 768px) {
+      outline: 2px solid #000;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: #612727;
       display: flex;
-      align-items: center;
+      border-radius: 0.5em;
+    }
 
-      svg {
-        margin-right: 0.5rem;
+    li {
+      position: relative;
+
+      transition: background-color 0.3s;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        position: relative;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-    }
-  }
-
-  .menu-icon {
-    cursor: pointer;
-    display: none;
-
-    svg {
-      color: #fff;
-      font-size: 2rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .menu-items {
-      display: none;
-    }
-
-    .menu-icon {
-      display: block;
-    }
-
-    .mobile-menu {
-      display: flex;
-      flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 1rem;
 
       a {
-        color: #fff;
+        color: #d4c190;
         text-decoration: none;
-        padding: 0.5rem 1rem;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+
+        @media screen and (max-width: 768px) {
+          padding: 0.3rem;
+          flex-direction: column;
+          font-size: 1.2em;
+        }
+
+        @media screen and (max-width: 430px) {
+          padding: 0.2rem;
+          font-size: 1em;
+        }
+
+        span {
+          margin-left: 0.5rem;
+          text-align: center;
+
+          @media screen and (max-width: 768px) {
+            display: block;
+            margin-top: 0.2rem;
+            font-size: 0.7em;
+          }
+
+          @media screen and (max-width: 430px) {
+            margin-top: 0.1rem;
+            font-size: 0.6em;
+          }
+        }
+
+        &:not(.active):hover {
+          color: #f8c471;
+        }
+      }
+
+      .active {
+        outline: 2px solid #d4c190;
+
+        display: block;
+        padding: 0.5em;
+
+        @media screen and (max-width: 768px) {
+          outline: 1px solid #75553f;
+
+          font-size: 0.4em;
+        }
       }
     }
   }

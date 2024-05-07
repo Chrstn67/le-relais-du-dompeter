@@ -1,23 +1,11 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import {
-  FaBars,
-  FaHome,
-  FaHotel,
-  FaInfo,
-  FaMap,
-  FaEnvelope,
-} from "react-icons/fa";
+import { useState } from "react";
+import { FaHome, FaHotel, FaInfo, FaMap, FaEnvelope } from "react-icons/fa";
 import { GrRestaurant } from "react-icons/gr";
-
 import "./Navbar.scss";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setNavOpen(!navOpen);
-  };
 
   const closeNav = () => {
     setNavOpen(false);
@@ -33,35 +21,36 @@ const Navbar = () => {
   ];
 
   return (
-    <nav>
+    <nav className="Navbar">
       <div className="container">
-        <h1>Relais du Dompeter</h1>
-
-        <div className="menu-items">
+        <ul className="menu-items">
           {navItems.map((item, index) => (
-            <Link key={index} to={item.to}>
-              <span className="icone">
-                {item.icon}
-                <span>{item.text}</span>
-              </span>
-            </Link>
+            <li key={index}>
+              <Link to={item.to}>
+                <span className="icone">
+                  {item.icon}
+                  <span>{item.text}</span>
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
-        <div className="menu-icon" onClick={toggleNav}>
-          <FaBars />
-        </div>
+        </ul>
       </div>
 
       {navOpen && (
         <div className="mobile-menu">
-          {navItems.map((item, index) => (
-            <Link key={index} to={item.to} onClick={closeNav}>
-              <span className="icone">
-                {item.icon}
-                <span>{item.text}</span>
-              </span>
-            </Link>
-          ))}
+          <ul>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link to={item.to} onClick={closeNav}>
+                  <span className="icone">
+                    {item.icon}
+                    <span>{item.text}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </nav>

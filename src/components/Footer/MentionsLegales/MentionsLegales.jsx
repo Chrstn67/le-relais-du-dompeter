@@ -55,7 +55,7 @@ function MentionsLegales() {
       <h2>9. Contact</h2>
       <p>
         Pour toute question ou réclamation concernant ce site, veuillez nous
-        contacter à l&#39;adresse suivante : [Adresse de contact].
+        contacter à l&#39;adresse suivante : mjo.vetter@gmail.com.
       </p>
     </section>
   );

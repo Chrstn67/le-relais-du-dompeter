@@ -58,11 +58,6 @@ function MentionsLegales() {
         Pour toute question ou réclamation concernant ce site, veuillez nous
         contacter à l&#39;adresse suivante : [Adresse de contact].
       </p>
-
-      <p>
-        Cette page de mentions légales a été mise à jour le [Date de la dernière
-        mise à jour].
-      </p>
     </section>
   );
 }

@@ -36,22 +36,22 @@ const Accueil = () => {
             vous réservera d&#39;innombrables souvenirs.
           </p>
           <p>
-            Sans appréhention, même en hiver, laissez-vous surprendre par le
+            Sans appréhension, même en hiver, laissez-vous surprendre par le
             charme de nos villages colorés, par la diversité de nos paysages et
             de notre culture.
           </p>
           <p>
-            Accompagnées de vos amis, de votre famille et de vos enfants, venez
+            Accompagnés de vos amis, de votre famille et de vos enfants, venez
             découvrir et déguster nos trésors culinaires traditionnels, assortis
             de grands crus d&#39;Alsace.
           </p>
           <p>
-            Venez faire un &#39;relais&#39; dans notre relais où je me ferais un
+            Venez faire un &#39;relais&#39; dans notre relais où je me ferai un
             plaisir de vous accueillir et de vous assurer des jours agréables.
           </p>
           <p>
             Situé à 25 kilomètres de Strasbourg et 3 kilomètres de Molsheim, ce
-            qui sera votre lieu de séjour préféré est parfaitement palcé de
+            qui sera votre lieu de séjour préféré est parfaitement placé de
             manière à vous assurer des déplacements des plus faciles !
           </p>
           <p>Mon souhait ? Que votre rêve Alsacien devienne une réalité !</p>

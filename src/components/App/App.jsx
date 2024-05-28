@@ -14,7 +14,7 @@ import Contact from "../Contact/Contact";
 import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
 import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
-// import NotFound from "../NotFound/NotFound";
+import NotFound from "../NotFound/NotFound";
 
 import "./App.scss";
 
@@ -37,7 +37,7 @@ function App() {
             <Route path="/infos-pratiques" element={<InfosPratiques />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>

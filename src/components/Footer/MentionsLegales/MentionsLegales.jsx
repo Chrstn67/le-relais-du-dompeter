@@ -16,6 +16,7 @@ function MentionsLegales() {
         Nom et prénom du directeur de la publication : Marie-Josée
         VETTER-BRUCKER
       </p>
+      <p>Développeur : Christian HUMBERT</p>
 
       <h3>3. Hébergement du site</h3>
       <p>Nom de l&#39;hébergeur : OVH</p>
@@ -30,29 +31,20 @@ function MentionsLegales() {
       <h3>5. Données personnelles</h3>
       <p>
         Les données personnelles collectées sur ce site sont traitées
-        conformément à notre politique de confidentialité. Pour plus
-        d&#39;informations, veuillez consulter notre politique de
-        confidentialité.
+        conformément à notre politique de confidentialité.
       </p>
 
-      <h3>6. Cookies</h3>
-      <p>
-        Ce site utilise des cookies pour améliorer l&#39;expérience de
-        l&#39;utilisateur. Pour plus d&#39;informations sur l&#39;utilisation
-        des cookies, veuillez consulter notre politique en matière de cookies.
-      </p>
-
-      <h3>7. Responsabilité</h3>
+      <h3>6. Responsabilité</h3>
       <p>
         L&#39;entreprise ne peut être tenue responsable des dommages résultant
         de l&#39;utilisation de ce site ou de l&#39;impossibilité d&#39;y
         accéder.
       </p>
 
-      <h3>8. Droit applicable</h3>
+      <h3>7. Droit applicable</h3>
       <p>Le présent site est soumis au droit applicable dans votre pays.</p>
 
-      <h3>9. Contact</h3>
+      <h3>8. Contact</h3>
       <p>
         Pour toute question ou réclamation concernant ce site, veuillez nous
         contacter à l&#39;adresse suivante : mjo.vetter@gmail.com.

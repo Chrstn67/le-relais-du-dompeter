@@ -12,6 +12,7 @@ import InfosPratiques from "../InfosPratiques/InfosPratiques";
 import Contact from "../Contact/Contact";
 
 import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 // import NotFound from "../NotFound/NotFound";
 
@@ -41,6 +42,7 @@ function App() {
           <Footer />
         </div>
       </HashRouter>
+      <ScrollToTopButton />
     </div>
   );
 }

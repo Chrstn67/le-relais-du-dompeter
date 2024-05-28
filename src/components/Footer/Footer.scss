@@ -29,7 +29,7 @@
     }
   }
 
-  ul {
+  div {
     list-style: none;
     padding: 0;
     margin: 1em 0;
@@ -38,33 +38,15 @@
       margin-top: 0.5em;
     }
 
-    li {
-      display: inline-block;
-      margin-right: 1em;
+    p,
+    a {
+      margin: 1em 0;
+      text-align: center;
+      color: #ffffff;
 
       @media screen and (max-width: 600px) {
-        display: block;
-        margin: 0.5em 0;
+        margin-top: 0.5em;
       }
-
-      a {
-        text-decoration: none;
-        color: #ffffff;
-
-        &:hover {
-          color: #007bff;
-        }
-      }
-    }
-  }
-
-  p {
-    margin: 1em 0;
-    text-align: center;
-    color: #ffffff;
-
-    @media screen and (max-width: 600px) {
-      margin-top: 0.5em;
     }
   }
 }

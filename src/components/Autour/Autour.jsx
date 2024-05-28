@@ -194,7 +194,7 @@ const Festivites = () => {
                   <option value="Saverne">Saverne</option>
                 </select>
               </label>
-              <button type="submit">Rechercher</button>
+              <button type="submit">Ligne</button>
             </form>
             <ul>
               {busOptions.map((option, index) => (

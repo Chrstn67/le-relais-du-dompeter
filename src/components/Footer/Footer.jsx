@@ -11,7 +11,7 @@ const Footer = () => {
         alt="Logo relais du Dompeter"
       />
 
-      <ul>
+      <div>
         {/* <li>
               <Link to="/conditions-generales-d-utilisation">
                 Conditions générales d&#39;utilisation
@@ -21,10 +21,10 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Relais du Dompeter. <br /> Tous
           droits réservés.
         </p>
-        <li>
+        <p>
           <Link to="/mentions-legales">Mentions légales</Link>
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <img className="logoDev" src="Logo.jpg" alt="Logo développeur" />
     </footer>

@@ -48,13 +48,17 @@
 .logement-3,
 .logement-4,
 .logement-5 {
-  width: 20em;
+  width: 100%;
   text-align: center;
   margin: 1rem;
   padding: 1rem;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px #00000033;
+
+  @media screen and (min-width: 946px) {
+    width: 20em;
+  }
 
   h2 {
     font-size: 1.5em;
@@ -77,6 +81,11 @@
       height: 15em;
       object-fit: cover;
       border-radius: 0.5em;
+
+      @media screen and (max-width: 540px) {
+        width: 12em;
+        height: 12em;
+      }
     }
   }
 

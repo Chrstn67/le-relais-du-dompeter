@@ -24,7 +24,6 @@ const Navbar = () => {
         className="navbar-burger"
         onClick={() => {
           toggleMenu();
-          scrollToTop();
         }}
       >
         ☰

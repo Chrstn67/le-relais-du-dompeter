@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa";
 
 import "./Footer.scss";
 
@@ -10,13 +11,16 @@ const Footer = () => {
         src="LogoDompeter.png"
         alt="Logo relais du Dompeter"
       />
+      <a
+        href="https://www.facebook.com/evenloc67/?locale=fr_FR"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Facebook"
+      >
+        <FaFacebook />
+      </a>
 
       <div>
-        {/* <li>
-              <Link to="/conditions-generales-d-utilisation">
-                Conditions générales d&#39;utilisation
-              </Link>
-            </li> */}
         <p>
           &copy; {new Date().getFullYear()} Relais du Dompeter. <br /> Tous
           droits réservés.

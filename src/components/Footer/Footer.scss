@@ -14,10 +14,11 @@
   .logo {
     width: 10em;
     height: auto;
-
-    @media screen and (max-width: 600px) {
-      width: 70vw;
-    }
+  }
+  svg {
+    margin-top: 0.5em;
+    color: #c1c8ce;
+    font-size: 2rem;
   }
 
   .logoDev {

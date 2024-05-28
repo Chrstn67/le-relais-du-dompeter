@@ -8,7 +8,7 @@ const Accueil = () => {
     "Receptions",
     "Séminaires",
     "Nuitées",
-    "Séjours",
+    "Vacances",
   ].filter(Boolean);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,6 +83,10 @@ const Accueil = () => {
 
       <section className="services">
         <h2>Services</h2>
+        <p>
+          Nous vous proposons les services suivants, pour vous offrir un
+          meilleur un séjour de qualité
+        </p>
 
         <ul>
           <li>{servicesArray[currentIndex]}</li>

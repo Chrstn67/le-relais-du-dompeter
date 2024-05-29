@@ -7,6 +7,7 @@
     cursor: pointer;
     display: none;
     font-size: 1.5em;
+    z-index: 999;
 
     @media screen and (max-width: 856px) {
       display: block;
@@ -18,7 +19,6 @@
       padding: 0.5em;
       border-radius: 0.5em;
       outline: 1px solid #000;
-      z-index: 999;
     }
   }
 
@@ -38,7 +38,7 @@
       flex-direction: column;
       width: 100%;
       background-color: #612727;
-      z-index: 1;
+      z-index: 9999;
       display: none;
 
       &.show {
@@ -56,7 +56,7 @@
       }
 
       a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         display: flex;
         align-items: center;

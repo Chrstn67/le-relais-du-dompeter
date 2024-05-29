@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
@@ -10,6 +9,7 @@ import "./LeafletTown.scss";
 const LeafletTown = () => {
   const [mapCenter, setMapCenter] = useState([48.5613977, 7.5024652]);
   const [selectedType, setSelectedType] = useState("Tous");
+
   const getCustomIcon = (type) => {
     return new Icon(iconMappings[type] || iconMappings.Hôtel);
   };
@@ -70,8 +70,15 @@ const LeafletTown = () => {
 
   return (
     <>
-      <section className="info-carte">
+      <section className="intro-page">
         <h2>À visiter</h2>
+        <p>
+          Découvrez les lieux incontournables autour du Relais du Dompeter :{" "}
+          <br />
+          Sentiers de randonnée, châteaux, musées, parcs animaliers...
+        </p>
+      </section>
+      <section className="info-carte">
         <div>
           <label htmlFor="filter">Filtrer par: </label>
           <select
@@ -89,7 +96,7 @@ const LeafletTown = () => {
         <MapContainer
           center={mapCenter}
           zoom={13}
-          style={{ height: "400px", width: "100%" }}
+          style={{ height: "500px", width: "100%" }}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

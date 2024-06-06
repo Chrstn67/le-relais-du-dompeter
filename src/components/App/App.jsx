@@ -19,7 +19,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Router>
         <div>
           <Header />
@@ -42,7 +42,7 @@ function App() {
         </div>
       </Router>
       <ScrollToTopButton />
-    </div>
+    </main>
   );
 }
 

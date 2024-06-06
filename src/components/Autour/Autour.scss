@@ -28,6 +28,9 @@
   span {
     color: #fff;
   }
+  &:hover {
+    box-shadow: 0 0 5px #612727;
+  }
 }
 
 .festivites {
@@ -52,7 +55,7 @@
     position: relative;
     width: 80%;
     padding: 1rem;
-    background-color: #d4eaf1;
+    background-color: #6127275e;
     border-radius: 0.5rem;
     margin: 1rem 0;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -66,7 +69,6 @@
     }
 
     &:hover {
-      transform: scale(1.03);
       background-color: #61272791;
       p {
         color: #d4eaf1;
@@ -80,11 +82,21 @@
       margin-bottom: 0.5rem;
     }
     a {
-      color: #000e55;
-      background-color: #f9f9f9;
-      padding: 0.2em;
+      background-color: #612727;
+      border: none;
+      padding: 0.5em;
+      margin: 0 auto;
+      border-radius: 0.5em;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
       &:hover {
-        text-decoration: underline;
+        box-shadow: 0 0 5px #612727;
       }
     }
 

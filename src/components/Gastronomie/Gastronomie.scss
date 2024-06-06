@@ -60,6 +60,9 @@
           width: 100%;
           cursor: pointer;
           outline: #612727 1px solid;
+          &:hover {
+            box-shadow: 0 0 5px #612727;
+          }
 
           img {
             width: 100%;

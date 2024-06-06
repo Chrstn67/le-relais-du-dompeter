@@ -26,6 +26,9 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
+    &:hover {
+      box-shadow: 0 0 5px #612727;
+    }
 
     p {
       font-size: 0.7em;

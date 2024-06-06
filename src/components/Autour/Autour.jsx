@@ -208,32 +208,36 @@ const Festivites = () => {
       </section>
 
       <section className="festivites">
-        <h2>Festivités</h2>
-        <p>
-          Toute l&#39;année est ponctuée de festivités que vous ne trouverez
-          nulle part ailleurs !
-          <br />
-          Venez vous délecter du patrimoine culturel alsacien !
-        </p>
+        <div className="festivites-header">
+          <h2>Festivités</h2>
+          <p>
+            Toute l&#39;année est ponctuée de festivités que vous ne trouverez
+            nulle part ailleurs !
+            <br />
+            Venez vous délecter du patrimoine culturel alsacien !
+          </p>
+        </div>
         <div className="festivites-list">
           {festivitesData.map((festivite, index) => (
             <div key={index} className="festivite-item">
-              <h3>{festivite.name}</h3>
-              <a
-                href={festivite.site}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Plus d&#39;infos
-              </a>
-              <p>
-                <strong>Date :</strong> {festivite.date}
-              </p>
-              <p>
-                <strong>Lieu :</strong> {festivite.lieu}
-              </p>
-              <p>{festivite.description}</p>
               <img src={festivite.image} alt={festivite.name} />
+              <div className="festivite-content">
+                <h3>{festivite.name}</h3>
+                <a
+                  href={festivite.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le site
+                </a>
+                <p>
+                  <strong>Date :</strong> {festivite.date}
+                </p>
+                <p>
+                  <strong>Lieu :</strong> {festivite.lieu}
+                </p>
+                <p>{festivite.description}</p>
+              </div>
             </div>
           ))}
         </div>

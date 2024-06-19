@@ -56,32 +56,28 @@ const Logements = () => {
             <p className="description-logement">{logement.description}</p>
 
             <div className="carousel">
-              {logement.photos.map((photo, photoIndex) => (
-                <img
-                  key={photoIndex}
-                  src={photo}
-                  alt={`Photo ${photoIndex + 1}`}
-                  style={{
-                    display:
-                      photoIndex === currentIndex[logementIndex]
-                        ? "block"
-                        : "none",
-                  }}
-                />
-              ))}
-              <div className="buttons-carousel">
-                <button>
-                  <BsFillArrowLeftSquareFill
-                    size={30}
-                    onClick={() => prevSlide(logementIndex)}
+              <div className="carousel-container">
+                {logement.photos.map((photo, photoIndex) => (
+                  <img
+                    key={photoIndex}
+                    src={photo}
+                    alt={`Photo ${photoIndex + 1}`}
+                    style={{
+                      display:
+                        photoIndex === currentIndex[logementIndex]
+                          ? "block"
+                          : "none",
+                    }}
                   />
-                </button>
-                <button>
-                  <BsFillArrowRightSquareFill
-                    size={30}
-                    onClick={() => nextSlide(logementIndex)}
-                  />
-                </button>
+                ))}
+                <div className="buttons-carousel">
+                  <button onClick={() => prevSlide(logementIndex)}>
+                    <BsFillArrowLeftSquareFill size={30} />
+                  </button>
+                  <button onClick={() => nextSlide(logementIndex)}>
+                    <BsFillArrowRightSquareFill size={30} />
+                  </button>
+                </div>
               </div>
             </div>
 

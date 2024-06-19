@@ -66,3 +66,16 @@ section {
     height: 3em;
   }
 }
+
+.recenter-button {
+  background-color: #612727;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px #612727;
+  }
+}

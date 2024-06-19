@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import React, { useState, useEffect, useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { iconMappings, townMarker } from "./constantes";
 import "./LeafletInfos.scss";
 
-const LeafletInfo = () => {
-  const [mapCenter, setMapCenter] = useState([48.5613977, 7.5024652]);
+const LeafletInfos = () => {
+  const initialCenter = [48.5613977, 7.5024652];
+  const [mapCenter, setMapCenter] = useState(initialCenter);
   const [selectedType, setSelectedType] = useState("Tous");
+  const mapRef = useRef(null);
 
   const getCustomIcon = (type) => {
     return new Icon(iconMappings[type] || iconMappings.Hôtel);
@@ -25,6 +27,20 @@ const LeafletInfo = () => {
 
   const handleTypeChange = (e) => {
     setSelectedType(e.target.value);
+  };
+
+  const recenterMap = () => {
+    if (mapRef.current) {
+      mapRef.current.setView(initialCenter, 13);
+    }
+  };
+
+  const MapController = () => {
+    const map = useMap();
+    useEffect(() => {
+      mapRef.current = map;
+    }, [map]);
+    return null;
   };
 
   return (
@@ -46,12 +62,16 @@ const LeafletInfo = () => {
               </option>
             ))}
           </select>
+          <button onClick={recenterMap} className="recenter-button">
+            Recentrer la carte
+          </button>
         </div>
         <MapContainer
           center={mapCenter}
           zoom={13}
           style={{ height: "500px", width: "100%" }}
         >
+          <MapController />
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -89,4 +109,4 @@ const LeafletInfo = () => {
   );
 };
 
-export default LeafletInfo;
+export default LeafletInfos;

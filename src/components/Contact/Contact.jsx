@@ -22,7 +22,7 @@ const ContactPage = () => {
 
         <p>
           <span>Téléphone:</span> <br />{" "}
-          <a href="tel:0765161969">07 65 16 19 69 </a>
+          <a href="tel:+33765161969">+33 (0)7 65 16 19 69</a>
         </p>
         <p>
           <span>Email:</span> <br />

@@ -30,7 +30,11 @@ const Footer = () => {
         </p>
       </div>
 
-      <img className="logoDev" src="Logo.jpg" alt="Logo développeur" />
+      <img
+        className="logoDev"
+        src="Logo.jpg"
+        alt="Logo de Christian HUMBERT, Développeur Web Frontend"
+      />
     </footer>
   );
 };

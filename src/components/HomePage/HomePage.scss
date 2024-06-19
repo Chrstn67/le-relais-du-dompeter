@@ -1,5 +1,5 @@
 @import url(https://fonts.bunny.net/css?family=fleur-de-leah:400);
-@import url(https://fonts.bunny.net/css?family=quintessential:400);
+@import url(https://fonts.bunny.net/css?family=alkatra:400);
 
 section {
   margin: 2rem;
@@ -17,15 +17,15 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h3 {
-    font-family: "Quintessential", handwriting;
+  h2 {
+    font-family: "Alkatra", display;
     font-size: 1.5em;
     letter-spacing: 0.5em;
     text-align: center;
   }
   p {
     margin-top: 1em;
-    font-family: "Quintessential", handwriting;
+    font-family: "Alkatra", display;
     font-size: 1.3em;
   }
   .signature {

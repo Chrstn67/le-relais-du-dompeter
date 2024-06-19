@@ -29,7 +29,7 @@ const Accueil = () => {
 
       <section className="home">
         <div>
-          <h3>Bienvenue !</h3>
+          <h2>Bienvenue !</h2>
           <p>
             Je vous invite à découvrir l&#39;Alsace dans toute sa splendeur. Au
             fil des quatre saisons, l&#39;une des plus belles régions de France

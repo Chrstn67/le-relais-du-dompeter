@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=quintessential:400);
+@import url(https://fonts.bunny.net/css?family=alkatra:400);
 
 .intro-page-logements {
   margin-top: 1em;
@@ -7,7 +7,7 @@
     font-size: 2em;
   }
   p {
-    font-family: "Quintessential", handwriting;
+    font-family: "Alkatra", display;
     color: #612727;
     font-size: 1.35em;
     margin: 1em;
@@ -75,31 +75,46 @@
     align-items: center;
     margin-bottom: 1rem;
 
-    img {
-      width: 30em;
-      height: 25em;
-      object-fit: cover;
-      border-radius: 0.5em;
+    .carousel-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      @media screen and (max-width: 540px) {
-        width: 12em;
-        height: 12em;
+      img {
+        width: 30em;
+        height: 25em;
+        object-fit: cover;
+        border-radius: 0.5em;
+
+        @media screen and (max-width: 540px) {
+          width: 12em;
+          height: 12em;
+        }
       }
-    }
-  }
 
-  .buttons-carousel {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0.5rem;
-    background-color: transparent;
+      .buttons-carousel {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
 
-    button {
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
+        button {
+          font-size: 1rem;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+
+          svg {
+            color: #ffffff;
+            background-color: #61272780;
+            padding: 0.3em;
+            border-radius: 0.5em;
+          }
+        }
+      }
     }
   }
 

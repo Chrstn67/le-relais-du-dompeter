@@ -1,4 +1,5 @@
 .banner {
+  margin-bottom: 0.5em;
   text-align: center;
   background-color: #612727;
   padding: 1em;
@@ -8,6 +9,7 @@
   p {
     color: #ffffff;
     font-size: 1.2em;
+    font-weight: 500;
   }
 
   &.visible {

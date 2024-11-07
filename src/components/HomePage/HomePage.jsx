@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./HomePage.scss";
 import PhotoGallery from "./PhotoGallery/PhotoGallery";
+import ModalInfo from "./ModalInfo/ModalInfo";
 
 const Accueil = () => {
   const servicesArray = [
@@ -23,6 +24,7 @@ const Accueil = () => {
 
   return (
     <>
+      <ModalInfo />
       <section className="photos-home">
         <PhotoGallery />
       </section>

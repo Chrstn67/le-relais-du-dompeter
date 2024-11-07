@@ -1,0 +1,60 @@
+.banner-info {
+  text-align: center;
+  background-color: #883939;
+  padding: 1em;
+  border-radius: 0.5em;
+  transition: opacity 0.3s, max-height 0.3s;
+  animation: blink2 2s linear infinite;
+  @keyframes blink2 {
+    0% {
+      background-color: #883939;
+    }
+    50% {
+      background-color: #612727;
+    }
+    100% {
+      background-color: #883939;
+    }
+  }
+
+  h4 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-size: 1.6em;
+  }
+
+  span {
+    color: #e5ff00;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    background-color: #612727;
+    border: none;
+    border-radius: 0.3em;
+    outline: 1px solid #000;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 5px #000000;
+    }
+  }
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &.hidden {
+    opacity: 0;
+    max-height: 0;
+  }
+}

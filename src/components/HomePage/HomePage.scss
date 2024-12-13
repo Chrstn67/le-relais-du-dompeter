@@ -17,22 +17,33 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h2 {
     font-family: "Alkatra", display;
     font-size: 1.5em;
     letter-spacing: 0.5em;
     text-align: center;
   }
+
   p {
     margin-top: 1em;
     font-family: "Alkatra", display;
     font-size: 1.3em;
+
+    @media (max-width: 768px) {
+      font-size: 1em;
+    }
   }
+
   .signature {
     text-align: right;
     margin-bottom: 1em;
     font-family: "Fleur De Leah", handwriting;
     font-size: 1.5em;
+
+    @media (max-width: 768px) {
+      font-size: 1.2em;
+    }
   }
 
   img {
@@ -41,24 +52,38 @@ section {
     object-fit: cover;
     border-radius: 0.5em;
     margin: 0.5em;
+
+    @media (max-width: 768px) {
+      width: 10em;
+      height: 10em;
+    }
+  }
+}
+
+.photos-home {
+  h2 {
+    text-align: center;
   }
 }
 
 .services {
   text-align: center;
+
   h2 {
     font-size: 1.5rem;
   }
+
   p {
     font-size: 1rem;
   }
+
   ul {
     list-style: none;
     padding: 0;
+
     li {
       font-weight: 700;
       filter: drop-shadow(10px 20px 10px #612727);
-
       text-transform: uppercase;
       letter-spacing: 4px;
       overflow: hidden;
@@ -70,8 +95,8 @@ section {
       -webkit-text-fill-color: transparent;
       font-size: 1.2em;
 
-      @media (min-width: 768px) {
-        font-size: 2em;
+      @media (max-width: 768px) {
+        font-size: 1.5em;
       }
 
       @keyframes animate {

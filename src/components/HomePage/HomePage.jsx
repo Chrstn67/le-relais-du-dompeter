@@ -25,13 +25,32 @@ const Accueil = () => {
   return (
     <>
       <ModalInfo />
-      <section className="photos-home">
-        <PhotoGallery />
-      </section>
 
       <section className="home">
         <div>
           <h2>Bienvenue !</h2>
+          <div className="picture-home">
+            <img
+              src="./images/Relais/cour-accueil.jpg"
+              alt="Cour intérieure du Relais du Dompeter"
+            ></img>
+            <img
+              src="./images/Relais/arriere_cour.jpg"
+              alt="Cour vue du fond de la propriété"
+            ></img>
+            <img
+              src="./images/Relais/piscine_1.jpg"
+              alt="Cour intérieure du Relais du Dompeter"
+            ></img>
+            <img
+              src="./images/Relais/piscine_2.jpg"
+              alt="Cour intérieure du Relais du Dompeter"
+            ></img>
+            <img
+              src="./images/Relais/arriere_cours.jpg"
+              alt="Cour vue du fond de la propriété"
+            ></img>
+          </div>
           <p>
             Je vous invite à découvrir l&#39;Alsace dans toute sa splendeur. Au
             fil des quatre saisons, l&#39;une des plus belles régions de France
@@ -59,28 +78,10 @@ const Accueil = () => {
           <p>Mon souhait ? Que votre rêve Alsacien devienne une réalité !</p>
           <p className="signature">Marie-Jo Vetter-Brucker</p>
         </div>
-        <div className="picture-home">
-          <img
-            src="./images/Relais/cour-accueil.jpg"
-            alt="Cour intérieure du Relais du Dompeter"
-          ></img>
-          <img
-            src="./images/Relais/arriere_cour.jpg"
-            alt="Cour vue du fond de la propriété"
-          ></img>
-          <img
-            src="./images/Relais/piscine_1.jpg"
-            alt="Cour intérieure du Relais du Dompeter"
-          ></img>
-          <img
-            src="./images/Relais/piscine_2.jpg"
-            alt="Cour intérieure du Relais du Dompeter"
-          ></img>
-          <img
-            src="./images/Relais/arriere_cours.jpg"
-            alt="Cour vue du fond de la propriété"
-          ></img>
-        </div>
+      </section>
+      <section className="photos-home">
+        <h2>Willkomme !</h2>
+        <PhotoGallery />
       </section>
 
       <section className="services">
